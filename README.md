@@ -1,107 +1,100 @@
-# Bridgetown documentation template using Tailwind CSS
+---
+label: "Welcome"
+icon: home
+---
+![](/static/retype-hero.png)
 
-A Bridgetown documentation site theme, built with Tailwind CSS.
+# Welcome to Retype
 
+[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple Markdown text files. Focus on your writing while Retype builds the rest.
 
-<img src="https://github.com/spinalcms/bridgetown-docs-template/blob/main/bridgetown-docs-preview.jpg?raw=true" alt="preview of the Bridgetown documentation theme, built with Tailwind CSS" />
+{.callout}
+> “Retype is the perfect fit for my user persona -\
+> tech savvy non-devs who want to write using the best web standards out there” *- jonnyfeelgood*
 
+No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
 
-## Sponsored By [Spinal](https://spinalcms.com/cms-for-bridgetown/)
+The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
 
-<a href="https://spinalcms.com/cms-for-bridgetown/" target="_blank">
-  <img src="https://user-images.githubusercontent.com/988051/183079316-af747ef2-42a9-47d8-9a0c-488ed4b6a689.jpg" alt="Spinal CMS logo" width="200"/>
-</a>
+{.callout}
+> “I don't want to write code to write docs,\
+> I just want to write docs.” *- rab-dev*
 
+A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
 
-## Installation
+---
 
-Run this command to add this plugin to your site's Gemfile:
+## Quick start :zap::zap::zap:
 
-```shell
-$ bundle add bridgetown-docs-template -g bridgetown_plugins
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
+
+From your command line, navigate to a folder location where you have one or more Markdown **.md** files, such as a GitHub project.
+
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
+
++++ NPM
 ```
-
-Then add the initializer to your configuration in `config/initializers.rb`:
-
-```ruby
-init :"bridgetown-docs-template"
+npm install retypeapp --global
+retype start
 ```
-
-
-## Requirements
-
-There are a few requirements for this theme to run.
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind CSS Typograhpy](https://tailwindcss.com/docs/typography-plugin)
-- [ERB template engine](https://www.bridgetownrb.com/docs/template-engines/erb-and-beyond)
-
-### Minimum frontmatter requirements
-
-The following frontmatter is expected in your collection resources:
-
-- layout: `bridgetown_docs_template/layout`
-- title
-- description
-- category
-
-If you want to show the “video” or “quick links” section—likely in your docs root, add `show_videotour: true` and `show_quicklinks: true` to your root's markdown file.
-
-
-### Add the gem's path in the `content` array of your Tailwind CSS config, like so:
-
-```js
-content: [
-  //…
-  "path-to-your-gems"
-  //…
-]
++++ Yarn
 ```
-
-One way this can be achieved without hardcoding paths is as follows:
-
-```js
-const execSync = require("child_process").execSync;
-const gemPath = execSync("bundle show bridgetown-docs-template", { encoding: "utf-8" }).trim();
-
-module.exports = {
-  content: [
-    ...,
-    gemPath + "/**/*.{html,md,liquid,erb,serb,rb}",
-  ],
-  ...
-}
+yarn global add retypeapp
+retype start
 ```
++++ dotnet
+```
+dotnet tool install retypeapp --global
+retype start
+```
++++
 
-## Configuring views/components
+That's it! Your new Retype website should be up and running.
 
-This theme makes heavy use of [Bridgetown's components](https://www.bridgetownrb.com/docs/components). If you want to make certain tweaks to any part, it's easy to change any component. Just follow [this guide](https://www.bridgetownrb.com/docs/commands/plugins#copying-files-out-of-plugin-source-folders).
+!!!
+You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
 
+All operating systems are supported, including Mac, Windows, and Linux.
+!!!
 
-## Optional configuration options
+---
 
-The plugin will automatically use any of the following metadata variables if they are present in your site's `_data/site_metadata.yml` file.
+## Features
 
-- name
-- email
+#### :icon-shield-check: It just works
 
-## Examples
+Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
 
-- [Spinal](https://spinalcms.com/docs/)
-- [Helptail](https://helptail.com/docs/)
+#### :icon-zap: Lightning fast
 
-## Related repo's
+Don't blink. Retype was built for speed.
 
-- [Documentation theme built with Tailwind CSS](https://github.com/SpinalCMS/docs-template)
-- [11ty documentation template using Tailwind CSS](https://github.com/SpinalCMS/11ty-docs-template)
-- [Astro documentation template using Tailwind CSS](https://github.com/SpinalCMS/astro-docs-template)
+#### :icon-gear: Easy install
 
+[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown **.md** file which Retype will start building a new website from.
 
-## Contributing
+#### :icon-plug: Powerful
 
-1. Fork it (https://github.com/spinalcms/bridgetown-docs-template/fork)
-2. Clone the fork using `git clone` to your local development machine.
-3. Create your feature branch (`git checkout -b my-new-feature`)
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin my-new-feature`)
-6. Create a new Pull Request
+Project level [configuration](/configuration/project.md) using **retype.yml** unlocks many more features and customization.
+
+#### :icon-pencil: Simple formatting
+
+Pages are [formatted](/guides/formatting.md) using Markdown syntax and Retype [components](/components/components.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
+
+#### :icon-sync: Live reload
+
+If a change is detected, such as editing and saving an **.md** file, your Retype website will be updated almost instantly within the browser.
+
+#### :icon-server: Host anywhere
+
+Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organizations network.
+
+---
+
+## Support
+
+Do you have a technical support question, found a defect, or would like to make a feature request? Please create an [issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
+
+Do you have a general inquiry? Please feel free to contact us at hello@retype.com.
+
+We :heart: feedback.
