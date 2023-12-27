@@ -3,14 +3,10 @@ icon: shield-check
 tags: [guide]
 ---
 
-
-# HAC Web Console KT 관리자용 가이드
-
-<aside>
-⚠️ 이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다.
+# HAC Web Console 사용 가이드
+이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다.
 KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가능한 문제를 빠르게 대응하는데 도움을 줍니다.
 
-</aside>
 
 1. HAC Web Console Overview
 2. Web Console Components

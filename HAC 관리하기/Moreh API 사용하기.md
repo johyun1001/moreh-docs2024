@@ -9,11 +9,11 @@ tags: [guide]
 
 ### Moreh API 란
 
-[**Moreh API**](https://dev-console.moreh.dev/api-docs/)는 오픈 소스 GRPC 기반 사용자 API 이며 KT Portal에서 REST로 호출됩니다.
+[Moreh API](https://dev-console.moreh.dev/api-docs/)는 오픈 소스 GRPC 기반 사용자 API 이며 KT Portal에서 REST로 호출됩니다.
 
 ### Moreh API 시작하기
 
-Moreh API를 사용하기 위해서는 https://mcp.moreh.dev/에서 지정한 KTC 관리자용 아이디와 비밀번호를 입력하면 Moreh API 서비스를 이용할 수 있습니다. 
+Moreh API를 사용하기 위해서는 https://mcp.moreh.dev/ 에서 지정한 KTC 관리자용 아이디와 비밀번호를 입력하면 Moreh API 서비스를 이용할 수 있습니다. 
 
 API 호출시 검증된 KTC 관리자용 아이디 및 이메일 주소가 확인이 되는 경우 API 접근 가능 token (access token)이 자동으로 인증됩니다.
 
