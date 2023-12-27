@@ -1,8 +1,8 @@
 ---
-icon: note
+icon: cpu
 tags: [guide]
 ---
-# About MoAI
+# GPU 자원 변경
 
 
 !!!
@@ -11,7 +11,7 @@ View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/
 
 ---
 
-## Quick start
+## moreh-switch-model
 
 The following sample demonstrates a very basic `sample.md` page sample with a page title and one paragraph.
 
