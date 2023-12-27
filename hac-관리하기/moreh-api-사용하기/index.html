@@ -10,24 +10,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>GPU 자원 변경</title>
-    <meta name="title" content="GPU 자원 변경">
-    <meta name="description" content="View the actual formatting.md file used to create this page.">
+    <title>Moreh API 사용하기</title>
+    <meta name="title" content="Moreh API 사용하기">
+    <meta name="description" content="이 매뉴얼은 Moreh API 접속 및 호출 방법을 소개합니다.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://github.com/moreh/moreh-docs2024/settings/pages/guides/gpu-자원변경/">
+    <link rel="canonical" href="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/moreh-api-사용하기/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/guides/gpu-자원변경/">
-    <meta property="og:title" content="GPU 자원 변경">
-    <meta property="og:description" content="View the actual formatting.md file used to create this page.">
+    <meta property="og:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/moreh-api-사용하기/">
+    <meta property="og:title" content="Moreh API 사용하기">
+    <meta property="og:description" content="이 매뉴얼은 Moreh API 접속 및 호출 방법을 소개합니다.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/guides/gpu-자원변경/">
-    <meta property="twitter:title" content="GPU 자원 변경">
-    <meta property="twitter:description" content="View the actual formatting.md file used to create this page.">
+    <meta property="twitter:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/moreh-api-사용하기/">
+    <meta property="twitter:title" content="Moreh API 사용하기">
+    <meta property="twitter:description" content="이 매뉴얼은 Moreh API 접속 및 호출 방법을 소개합니다.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -36,7 +36,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.756978986503" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.756978986503" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.756978986503" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -165,194 +164,157 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="gpu-자원-변경" class="break-words">
+<doc-anchor-target id="moreh-api-사용하기" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gpu-자원-변경">#</doc-anchor-trigger>
-        <span>GPU 자원 변경</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-api-사용하기">#</doc-anchor-trigger>
+        <span>Moreh API 사용하기</span>
     </h1>
 </doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>View the actual <a href="https://github.com/retypeapp/retype/blob/main/guides/formatting.md"><code v-pre>formatting.md</code></a> file used to create this page.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<doc-anchor-target id="moreh-switch-model">
+<p>이 매뉴얼은 <a href="https://dev-console.moreh.dev/api-docs/">Moreh API</a> 접속 및 호출 방법을 소개합니다.</p>
+<doc-anchor-target id="moreh-api-란">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-api-란">#</doc-anchor-trigger>
+        <span>Moreh API 란</span>
+    </h3>
+</doc-anchor-target>
+<p><a href="https://dev-console.moreh.dev/api-docs/"><strong>Moreh API</strong></a>는 오픈 소스 GRPC 기반 사용자 API 이며 KT Portal에서 REST로 호출됩니다.</p>
+<doc-anchor-target id="moreh-api-시작하기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-api-시작하기">#</doc-anchor-trigger>
+        <span>Moreh API 시작하기</span>
+    </h3>
+</doc-anchor-target>
+<p>Moreh API를 사용하기 위해서는 <a href="https://mcp.moreh.dev/%EC%97%90%EC%84%9C">https://mcp.moreh.dev/에서</a> 지정한 KTC 관리자용 아이디와 비밀번호를 입력하면 Moreh API 서비스를 이용할 수 있습니다.</p>
+<p>API 호출시 검증된 KTC 관리자용 아이디 및 이메일 주소가 확인이 되는 경우 API 접근 가능 token (access token)이 자동으로 인증됩니다.</p>
+<doc-anchor-target id="api-구성-요소">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-switch-model">#</doc-anchor-trigger>
-        <span>moreh-switch-model</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-구성-요소">#</doc-anchor-trigger>
+        <span>API 구성 요소</span>
     </h2>
 </doc-anchor-target>
-<p>The following sample demonstrates a very basic <code v-pre>sample.md</code> page sample with a page title and one paragraph.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
-
-This is a paragraph.</code></pre>
-</doc-codeblock></div>
-<p>We can build on the above sample by adding more content and formatting, such as <strong>bold</strong> text, images, and lists.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markdown"><code v-pre class="language-markdown"># Page title here
-
-This is a paragraph.
-
-Both [internal](README.md) and [external](https://example.com) links work.
-
-![Your logo](logo.png)
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
----
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-&gt; &quot;Cool! This is a quotation.&quot;
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!</code></pre>
-</doc-codeblock></div>
-<p>At a very basic level, to create a new page for your Retype project, do the following:</p>
-<ol>
-<li>Make a <code v-pre>readme.md</code> file</li>
-<li>Add a <code v-pre># title</code></li>
-<li>Start writing</li>
-</ol>
-<doc-anchor-target id="home-page">
+<doc-anchor-target id="요청-request">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#home-page">#</doc-anchor-trigger>
-        <span>Home page</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#요청-request">#</doc-anchor-trigger>
+        <span><strong>요청 (Request)</strong></span>
     </h3>
 </doc-anchor-target>
-<p>Your project should include a default file (<code v-pre>index.md</code>, <code v-pre>default.md</code>, <code v-pre>readme.md</code>, or <code v-pre>welcome.md</code>) within the root of the project. If there is a default file within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.</p>
-<p>Outside of the root of your project, adding a file with the exact same name as folder, will also act as a default page for that folder. For instance, adding <code v-pre>/guides/guides.md</code> is equivalent to <code v-pre>/guides/index.md</code>.</p>
-<p>The default files can be used inside any folder of the project. Given the following folder and file structure, where <code v-pre>Guides</code> is a folder...</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">|-- Guides
-    |-- index.md
-    |-- getting-started.md
-|-- readme.md</code></pre>
-</doc-codeblock></div>
-<p>...Retype will create three pages in your website and the pages will be available at the following locations:</p>
-<ol>
-<li><code v-pre>/</code></li>
-<li><code v-pre>/guides/</code></li>
-<li><code v-pre>/guides/getting-started/</code></li>
-</ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If your home page is the Retype generated <strong>Welcome</strong> page, add a default page to the root of your project. The home page file can be named <code v-pre>index.md</code>, <code v-pre>default.md</code>, <code v-pre>readme.md</code>, or <code v-pre>welcome.md</code>.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<doc-anchor-target id="components">
+<p>먼저 API 요청을 제대로 하기 위해서는 특정 항목들을 일정 포맷에 따라 호출해야 합니다.
+API 요청 규격을 구성하는 요소는 Method(GET, POST, PUT, DELETE)와 API를 요청하기 위한 <strong>파라미터</strong>가 있습니다.</p>
+<p><strong>Method</strong></p>
+<ul>
+<li>GET</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+</ul>
+<doc-anchor-target id="응답-response">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#응답-response">#</doc-anchor-trigger>
+        <span><strong>응답 (Response)</strong></span>
+    </h3>
+</doc-anchor-target>
+<p>응답은 API 요청에 대한 결과값을 의미합니다. 예를 들어 특정 사용자 정보(사용자 고유 Key)를 불러올 때 정상적으로 불러왔는지 결과를 확인할 수 있습니다.
+요청한 API의 메서드에 따라 응답 형태는 달라질 수 있는데요. <code v-pre>POST</code> 요청 값을 Body에 실어 보낼 때는 해당 값이 잘 저장되었는지, 전달되었는지를 나타내는 성공여부를 나타내기도 하고, <code v-pre>GET</code> 요청처럼 특정 정보를 조회하거나 받아올 때는 값들을 코드로 확인할 수 있거나 자동적으로 다운로드 되기도합니다.</p>
+<ul>
+<li>요청 성공 시: HTTP 상태 코드 및 API별 성공 응답 필드 반환</li>
+<li>요청 실패 시: HTTP 상태 코드 및 JSON 형식의 에러 응답 필드 반환, 에러 응답 필드에 에러 코드 및 메시지 포함</li>
+</ul>
+<doc-anchor-target id="파라미터query-parameter">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#파라미터query-parameter">#</doc-anchor-trigger>
+        <span><strong>파라미터(Query Parameter)</strong></span>
+    </h3>
+</doc-anchor-target>
+<p>파라미터는 요청 처리에 필요한 데이터를 전달하는 데 사용합니다. 키와 값의 쌍으로 구성되며, 쿼리 스트링(Query string) 또는 바디(Body)를 통해 전달합니다.
+각 파라미터는 자료형(Data type)과 필수 전달 여부가 지정돼 있습니다.
+이 문서에는 API 메소드 당 전달해야하는 파라미터 type과 필수 여부 설명 등이 제공됩니다. 간혹 Element가 없는 요청도 있는데 정보를 불러올 때 사용하는 GET 메서드에서 Element가 없는 요청이 나타나기도 합니다.</p>
+<doc-anchor-target id="moreh-cloud-apiver-2-information">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#components">#</doc-anchor-trigger>
-        <span>Components</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-cloud-apiver-2-information">#</doc-anchor-trigger>
+        <span><strong>Moreh Cloud API(ver 2) Information</strong></span>
     </h2>
 </doc-anchor-target>
-<p>In addition to the standard Markdown options, Retype includes many custom <a href="/components/components.md">components</a> so you can easily add extra <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span><span class="docs-emoji">&#x1F48E;</span> flair <span class="docs-emoji">&#x1F48E;</span></span>
-</span> to your document.</p>
-<p>The most commonly used Retype components include <a href="/components/alert.md">Alert</a> and <a href="/components/tab.md">Tab</a>:</p>
-<doc-anchor-target id="alert">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#alert">#</doc-anchor-trigger>
-        <span>Alert</span>
-    </h3>
-</doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>This is an Alert</p>
-        </div>
-    </div>
-</div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample <a href="/components/alert.md">Alert</a> component</div>
-<pre class="language-none"><code v-pre class="language-none">!!!
-This is an Alert
-!!!</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="tab">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tab">#</doc-anchor-trigger>
-        <span>Tab</span>
-    </h3>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab v-cloak id="tab-1">
-<template #title>Tab 1</template>
-<p>This is Tab 1</p>
-</doc-tab>
-<doc-tab v-cloak id="tab-2">
-<template #title>Tab 2</template>
-<p>This is another Tab</p>
-</doc-tab>
-</doc-tabs>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Sample <a href="/components/tab.md">Tab</a> component</div>
-<pre class="language-none"><code v-pre class="language-none">+++ Tab 1
-This is Tab 1
-+++ Tab 2
-This is another Tab
-+++</code></pre>
-</doc-codeblock></div>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
-    <div class="flex items-center text-blue-500 dark:text-blue-400">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">See all components</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/components/components.md</span>
-    </div>
-    <a href="/components/components.md" class="absolute block inset-0"></a>
-</div>
-</p>
+<p><strong>Check</strong></p>
+<p>API 와 DB 상태 및 gRPC 서버와 클라이언트의 통신 상태가 정상적인지 확인합니다.</p>
+<ul>
+<li><code v-pre>GET /api/check</code> - API, IPMI, DB, gRPC 상태 체크. API가 에러일 경우 모두 에러로 표시됨.</li>
+</ul>
+<p><strong>Backend</strong></p>
+<p>사용자 툴(moreh-smi)에서 넘어오는 backend 정보(SDA 및 token, 학습 process 정보)들을 관리합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/backend</code> - Backend 정보를 모두 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/backend</code> - Backend 정보를 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/backend</code> - Backend 정보를 수정하거나 전원 원격 제어를 위해 IPMI 명령어를 실행합니다.</li>
+<li><code v-pre>DELETE /api/v2/backend</code> - Backend 정보를 삭제합니다.</li>
+<li><code v-pre>GET /api/v2/backend/group</code> - Backend의 group 정보를 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/backend/group</code> - Backend group 정보를 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/backend/group</code> - Backend group 정보를 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/backend/group</code> - Backend group 정보를 삭제합니다.</li>
+<li><code v-pre>PUT /api/v2/backend/device/status</code> - Backend ID를 지정하여 Device들의 Status를 변경합니다.</li>
+<li><code v-pre>POST /api/v2/backend/grouping</code> - Backend ID를 지정하여 Device들의 Status를 변경합니다.</li>
+<li><code v-pre>PUT /api/v2/backend/grouping</code> - Backend로 이루어진 Group들 간에 관계를 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/backend/grouping</code> - Backend의 Grouping 된 것을 해제합니다.</li>
+</ul>
+<p><strong>SDAModel</strong></p>
+<p>사용 가능한 AI 가속기 디바이스(SDAModel)를 관리합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/sdamodel</code> - SDA Model 목록(micro, Small, Large, xLarge 등)을 불러옵니다</li>
+<li><code v-pre>POST /api/v2/sdamodel</code> - SDA Model 을 추가합니다.</li>
+<li><code v-pre>DELETE /api/v2/sdamodel</code> - SDA Model을 삭제합니다.</li>
+<li><code v-pre>POST /api/v2/sdamodel/grouping</code> - SDA Model의 Grouping을 생성합니다.</li>
+<li><code v-pre>DELETE /api/v2/sdamodel/grouping</code> - SDA Model의 Grouping을 해제합니다.</li>
+<li><code v-pre>GET /api/v2/sdamodel/group</code> - SDA Model 그룹 정보를 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/sdamodel/group</code> - SDA Model 그룹 정보를 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/sdamodel/group</code> - SDA Model 그룹 정보를 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/sdamodel/group</code> - SDA Model 그룹 정보를 수정합니다.</li>
+</ul>
+<p><strong>SDA</strong></p>
+<p>Token 별 사용 가능한 AI 가속기 디바이스(SDA)를 관리합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/sda</code> - SDA 정보를 모두 불러옵니다. 할당된 SDA가 존재한다면 할당된 device와 backend 또한 출력합니다.</li>
+<li><code v-pre>POST /api/v2/sda</code> - SDA Model, Token, 고정할당유무, 별칭을 지정하면 SDA를 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/sda</code> - Token 값을 지정하고 SDA Model ID를 선택하면 Token의 SDA Model이 지정된 값으로 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/sda</code> - Token 값을 지정하면 해당 SDA를 삭제합니다.</li>
+<li><code v-pre>GET /api/v2/sda/utilizations</code>- SDA의 할당 정보(메모리 사용량, 프로세스 정보)를 불러옵니다.</li>
+</ul>
+<p><strong>Token</strong></p>
+<p>Token 및 Group 정보를 관리합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/token</code> - Token 정보를 모두 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/token</code> - Token 별칭을 입력하면 고유한 값을 가진 Token을 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/token</code> - Token이 가지고 있는 고유한 값을 입력하면 Token을 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/token</code> - Token이 가지고 있는 고유한 값을 입력하면 Token을 삭제합니다.</li>
+<li><code v-pre>POST /api/v2/token/grouping</code> - Token (user) Grouping을 생성합니다.</li>
+<li><code v-pre>DELETE /api/v2/token/grouping</code> - Token (user) Grouping을 해제합니다.</li>
+<li><code v-pre>GET /api/v2/token/group</code> - Token (user) 그룹 정보를 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/token/group</code> - Token (user) 그룹 정보를 생성합니다.</li>
+<li><code v-pre>PUT /api/v2/token/group</code> - Token (user) 그룹 정보를 수정합니다.</li>
+<li><code v-pre>DELETE /api/v2/token/group</code> - Token (user) 그룹 정보를 삭제합니다.</li>
+</ul>
+<p><strong>Scheduler</strong></p>
+<p>GPU 스케줄러의 대기상태(queue)와 할당 기록을 확인합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/scheduler/queue</code> - GPU 스케줄러의 큐(queue) 안의 정보를 불러옵니다.</li>
+<li><code v-pre>PUT /api/v2/scheduler/queue</code> - 큐에서 대기중인 GPU 작업의 순서를 바꿀 때 사용합니다.</li>
+<li><code v-pre>DELETE /api/v2/scheduler/queue</code> - 등록된 Job을 삭제합니다.</li>
+<li><code v-pre>GET /api/v2/scheduler/history</code> - GPU 스케줄러의 기록 정보를 불러옵니다.</li>
+</ul>
+<p><strong>Membership</strong></p>
+<ul>
+<li><code v-pre>GET /api/v2/membership</code> - Membership 정보를 불러옵니다.</li>
+<li><code v-pre>POST /api/v2/membership</code> - Membership 정보를 생성합니다. (Group ID와 Group ID간의 연결을 생성합니다.</li>
+<li><code v-pre>DELETE /api/v2/membership</code> - Membership 정보를 삭제합니다. (Group ID와 Group ID간의 연결을 삭제합니다)</li>
+</ul>
+<p><strong>Usage</strong></p>
+<p>GPU 사용 기록을 확인합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/usage</code> - GPU 사용 기록을 불러옵니다.</li>
+</ul>
+<p><strong>Log</strong></p>
+<p>API Log를 관리합니다.</p>
+<ul>
+<li><code v-pre>GET /api/v2/log/sdamanager/event</code> - SDAManager에 발생한 Event(SDA 생성, SDA 변경 등)를 불러옵니다.</li>
+</ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -372,20 +334,20 @@ This is another Tab
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../guides/docker-이미지로-moreh-실행하기/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../hac-관리하기/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Docker 이미지로 Moreh 실행하기</span>
+                                                <span class="block mt-1">HAC(Hyperscale AI Computing) 관리하기</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/k8s-cluster에서-moreh-솔루션-사용하기/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../hac-관리하기/web-console/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">K​8​S Cluster에서 Moreh 솔루션 사용하기</span>
+                                                <span class="block mt-1">HAC Web Console KT 관리자용 가이드</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -429,6 +391,6 @@ This is another Tab
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "GPU 자원 변경", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Moreh API 사용하기", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
