@@ -10,34 +10,34 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>HAC Web Console 사용 가이드</title>
-    <meta name="title" content="HAC Web Console 사용 가이드">
+    <title>Web Console Components</title>
+    <meta name="title" content="Web Console Components">
     <meta name="description" content="이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다. KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가능한 문제를 빠르게 대응하는데 도움을 줍니다.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/web-console/">
+    <link rel="canonical" href="https://github.com/moreh/moreh-docs2024/settings/pages/products/hac-web-console/components/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/web-console/">
-    <meta property="og:title" content="HAC Web Console 사용 가이드">
+    <meta property="og:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/products/hac-web-console/components/">
+    <meta property="og:title" content="Web Console Components">
     <meta property="og:description" content="이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다. KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가능한 문제를 빠르게 대응하는데 도움을 줍니다.">
-    <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png">
+    <meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/hac-관리하기/web-console/">
-    <meta property="twitter:title" content="HAC Web Console 사용 가이드">
+    <meta property="twitter:url" content="https://github.com/moreh/moreh-docs2024/settings/pages/products/hac-web-console/components/">
+    <meta property="twitter:title" content="Web Console Components">
     <meta property="twitter:description" content="이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다. KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가능한 문제를 빠르게 대응하는데 도움을 줍니다.">
-    <meta property="twitter:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png">
+    <meta property="twitter:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.757589592194" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.757589592194" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757589592194" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757589592194" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.757589592194" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.757589592194" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -52,7 +52,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Moreh Documentation</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -166,17 +166,14 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="hac-web-console-사용-가이드" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#hac-web-console-사용-가이드">#</doc-anchor-trigger>
-        <span>HAC Web Console 사용 가이드</span>
-    </h1>
-</doc-anchor-target>
 <p>이 문서는 HAC Web Console로 GPU 자원 모니터링 및 관련 작업 등을 위한 가이드입니다.
 KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가능한 문제를 빠르게 대응하는데 도움을 줍니다.</p>
-<ol>
-<li>HAC Web Console Overview</li>
-<li>Web Console Components
+<doc-anchor-target id="web-console-components" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#web-console-components">#</doc-anchor-trigger>
+        <span>Web Console Components</span>
+    </h1>
+</doc-anchor-target>
 <ol>
 <li><a href="https://www.notion.so/HAC-Moreh-Cloud-Platform-KT-cc7296411cc84b0a93ae215a9c53b8d7?pvs=21">Cluster List</a>
 <ol>
@@ -191,14 +188,11 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <li><a href="https://www.notion.so/HAC-Moreh-Cloud-Platform-KT-cc7296411cc84b0a93ae215a9c53b8d7?pvs=21">SDA 모델 관리</a></li>
 <li><a href="https://www.notion.so/HAC-Moreh-Cloud-Platform-KT-cc7296411cc84b0a93ae215a9c53b8d7?pvs=21">클러스터 설정</a></li>
 </ol>
-</li>
-</ol>
-<hr>
-<doc-anchor-target id="1-hac-web-console-서비스-개요">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-hac-web-console-서비스-개요">#</doc-anchor-trigger>
-        <span>1. HAC Web Console 서비스 개요</span>
-    </h1>
+<doc-anchor-target id="1-hac-web-console-개요">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-hac-web-console-개요">#</doc-anchor-trigger>
+        <span>1. HAC Web Console 개요</span>
+    </h2>
 </doc-anchor-target>
 <p>HAC Web Console은 KT Cloud 관리자를 위한 GPU 관리 도구로, GPU 리소스 상태를 실시간으로 모니터링하여 현재 할당된 AI 가속기의 작업 상태와 클러스터 내부의 문제를 빠르게 감지하고 관리할 수 있는 플랫폼입니다.</p>
 <p>HAC Web Console을 사용하면 KTC 관리자는 다음과 같은 기능을 활용할 수 있습니다:</p>
@@ -209,15 +203,15 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p>위 제공된 기능들을 통해 KT Cloud 관리자는 GPU 리소스를 효율적으로 관리하고, 클러스터의 안정성을 바탕으로 사용자들에게 원활한 서비스를 제공할 수 있습니다.</p>
 <p>HAC Web Console은 여러 인터넷 브라우저를 지원하지만 크롬에서 가장 적합한 사용자 경험을 제공합니다.</p>
 <doc-anchor-target id="2-web-console-components">
-    <h1>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#2-web-console-components">#</doc-anchor-trigger>
         <span>2. Web Console Components</span>
-    </h1>
+    </h2>
 </doc-anchor-target>
 <p>HAC GPU 사용을 위한 전용 관리 페이지입니다.</p>
 <p>Web Console의 요소들과 각 기능을 어떻게 사용할 수 있는지 설명합니다.</p>
 <ol>
-<li><a href="https://www.notion.so/HAC-Moreh-Cloud-Platform-KT-cc7296411cc84b0a93ae215a9c53b8d7?pvs=21">Cluster List</a>
+<li><a href="https://www.notion.so/HAC-Web-Console-KT-03033de2d8a84ab18b502a3ccf9fc54a?pvs=21">Cluster List</a>
 <ul>
 <li>GPU 클러스터의 상태 및 실시간 사용 정보를 지표로 나타냅니다.</li>
 <li>Admin User Manage (관리자 정보 변경 및 권한 설정하기)</li>
@@ -264,7 +258,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p>로그인 인증 정보로 로그인하여 HAC 웹콘솔에 접속하면 첫 페이지가 다음과 같이 표시됩니다.</p>
 <p>이 페이지에서 클러스터의 개요 정보를 확인하고, 클러스터 목록을 통해 개별 클러스터로 진입할 수 있습니다. 또한 관리자 계정의 개인정보와 권한을 설정할 수 있습니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/5ad76520-9827-4af7-bea6-ce08e7fecc55/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -273,10 +267,10 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p><strong>Cluster 추가하기</strong></p>
 <ol>
 <li><p>웹 콘솔의 첫 화면에서 아래 클러스터 추가 [+ ADD Cluster] 아이콘을 클릭합니다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b21885b5-889d-4567-a7e6-61ef07aeb8a7/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/b21885b5-889d-4567-a7e6-61ef07aeb8a7/Untitled.png" alt="Untitled" /></p>
 </li>
 <li><p>아래 모달 창이 뜨면 추가할 클러스터 정보(이름, IP 주소, Description)를 입력합니다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d21d45dc-5f9f-4831-9e04-3faf54ed66d4/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/d21d45dc-5f9f-4831-9e04-3faf54ed66d4/Untitled.png" alt="Untitled" /></p>
 </li>
 </ol>
 <ul>
@@ -286,19 +280,19 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p><strong>Admin User Manage (관리자 개인 정보 변경 및 권한 설정하기)</strong></p>
 <p>사용자 관리 페이지에서 왼쪽 사이드바의 [Permission Manage]를 클릭하면 아래와 같이 Admin User List가 나타납니다. Admin User List에는 사용자 프로필 아이콘, 관리자 ID, 관리자 이름, 권한 Type 정보와 Master 권한의 관리자가 상호작용가능한 아이콘이 제공됩니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b2d41d9-422f-4d85-a0c6-c4ea38c6730a/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/9b2d41d9-422f-4d85-a0c6-c4ea38c6730a/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e39d2f3-53c2-4525-a35a-656a1b10e88b/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/0e39d2f3-53c2-4525-a35a-656a1b10e88b/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>Admin User List에서 특정 관리자의 첫번째 Interaction 아이콘을 클릭하면 관리자에 대한 정보를 수정할 수 있습니다. Master 계정의 사용자는 계정(General, Master 모두)에 대한 정보를 수정 가능 하며, General 계정의 사용자는 개인 계정 정보만 수정 가능합니다.</p>
 <p>아래와 같은 ****모달이 뜨면 다음 정보를 입력합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4f0d2ac-fad3-4438-8c0e-93a3273d68d6/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/b4f0d2ac-fad3-4438-8c0e-93a3273d68d6/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -332,18 +326,18 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </li>
 </ol>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eeb88caf-b07b-4f28-9ec5-b7c0149e9578/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/eeb88caf-b07b-4f28-9ec5-b7c0149e9578/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2ad0ff11-7820-4e82-943b-57b8275ab565/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/2ad0ff11-7820-4e82-943b-57b8275ab565/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>두번째 Interaction 아이콘을 클릭하면 해당 관리자의 권한을 General/Master로 변경할 수 있습니다.  <span class="docs-emoji">&#x2714;&#xFE0F;</span>Master 권한의 관리자만 변경 가능합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5dd2b90d-cd34-480f-8d0c-c7038bf2c599/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/5dd2b90d-cd34-480f-8d0c-c7038bf2c599/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -352,7 +346,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p><span class="docs-emoji">&#x2714;&#xFE0F;</span>Master 권한의 관리자만 새로운 Admin 계정을 추가할 수 있습니다.</p>
 <p>Admin User List 상단의 [+ Add] <strong>버튼을</strong> 클릭하면 Modify Personal Info(Admin 개인 정보 수정) 모달과 동일한 모달이 아래와 같이 등장합니다. 모달에 추가할 관리자 정보를 입력합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4109b4dd-f98f-4a5a-a652-e185768c81f3/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/4109b4dd-f98f-4a5a-a652-e185768c81f3/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -387,13 +381,13 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ol>
 <p><strong>Notification Manage (전체 알림 관리하기)</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/167a24f0-cd42-42b5-b0da-78e3c0ef811d/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/167a24f0-cd42-42b5-b0da-78e3c0ef811d/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>Notification Manage 페이지의 Notification List(클러스터 알람 목록)에 [+ Add Filter] 버튼을 클릭하면 다음 필터 패널이 나타납니다. 알림 특정 태그를 추가/제외 가능합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5407889-7989-4c34-8150-ab395ba89b86/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/e5407889-7989-4c34-8150-ab395ba89b86/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -434,7 +428,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
     </h3>
 </doc-anchor-target>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/94847bc5-22a8-41f4-8264-55ee20d911c4/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/94847bc5-22a8-41f4-8264-55ee20d911c4/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -489,10 +483,10 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <ul>
 <li>모니터링 리스트는 Grid(바둑판 뷰)와 List(목록형 뷰)로 제공되며 사용중인 노드와 이름 순서로 정렬됩니다.</li>
 </ul>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/260d542a-8f64-4644-b6cd-4bff921e8699/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/260d542a-8f64-4644-b6cd-4bff921e8699/Untitled.png" alt="Untitled" /></p>
 <ul>
 <li><p><strong>Node - Grid</strong>에서 노드 1개의 정보는 아래와 같이 나타납니다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae932aae-987a-4fef-a64c-ea435c467841/Untitled.png" alt="Grid(바둑판 뷰)의 노드 1개의 이미지" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/ae932aae-987a-4fef-a64c-ea435c467841/Untitled.png" alt="Grid(바둑판 뷰)의 노드 1개의 이미지" /></p>
 <p>Grid(바둑판 뷰)의 노드 1개의 이미지</p>
 <ul>
 <li>노드 이름 (호스트 이름)</li>
@@ -524,7 +518,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 </li>
 <li><p><strong>Node List</strong> 에서 모니터링 리스트에서 제공하는 노드 정보는 위 Node - Grid(바둑판 뷰)의 셀과 동일합니다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7c14fea2-a540-449a-aa4d-7a03f0541046/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/7c14fea2-a540-449a-aa4d-7a03f0541046/Untitled.png" alt="Untitled" /></p>
 </li>
 </ul>
 </li>
@@ -532,13 +526,13 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p><strong>노드 목록에 필터링 적용하기</strong></p>
 <p>Add Filter를 적용할 경우 선택된 필터링 내용을 해시태그 형태로 제공합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6343585b-a293-4d91-98ef-f4b90e6df705/Screen_Shot_2023-07-30_at_4.19.00_PM.png" alt="Screen Shot 2023-07-30 at 4.19.00 PM.png">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/6343585b-a293-4d91-98ef-f4b90e6df705/Screen_Shot_2023-07-30_at_4.19.00_PM.png" alt="Screen Shot 2023-07-30 at 4.19.00 PM.png">
     <figcaption class="caption">Screen Shot 2023-07-30 at 4.19.00 PM.png</figcaption>
 </figure>
 </p>
 <p>리스트 우측 상단에 다음 [+ Add Filter] 버튼을 클릭하여 아래 모달에 노드 목록에 표시될 항목을 선택합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8ed1e862-02bf-4f32-82ad-d03cdb355547/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/8ed1e862-02bf-4f32-82ad-d03cdb355547/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -569,7 +563,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </li>
 </ul>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a1b5ba4a-075c-44fe-92ec-8da93ee5c5f8/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/a1b5ba4a-075c-44fe-92ec-8da93ee5c5f8/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -592,13 +586,13 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 <p><strong>노드 그룹 추가하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc98bbd0-af3a-48d5-952a-ff3dcee8322a/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/bc98bbd0-af3a-48d5-952a-ff3dcee8322a/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>Node Group List 우측 상단에 [+ Add] 버튼을 클릭한 후 아래 모달에서 필요한 정보를 입력합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d892353e-9cd8-4f51-aa57-29ae2da50ce0/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/d892353e-9cd8-4f51-aa57-29ae2da50ce0/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -621,7 +615,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </doc-anchor-target>
 <p>Global Monitoring 페이지는 사용자가 HAC Web Console 내부에서 전체 클러스터를 빠르게 시각적으로 모니터링할 수 있도록 도와주는 패널입니다. 로컬 화면의 좌측 Navigation 바 하단에 위치한 글로벌 모니터링 아이콘을 클릭하면 다음 페이지가 나타납니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b3de0a9d-259a-49db-bd48-20591c14d534/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/b3de0a9d-259a-49db-bd48-20591c14d534/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -652,13 +646,13 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </li>
 </ul>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b3f9c1a-e4cb-45d8-908b-06c1b63bf444/Untitled.png" alt="하나의 노드를 한명의 HAC 사용자 사용했을때 툴팁">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/9b3f9c1a-e4cb-45d8-908b-06c1b63bf444/Untitled.png" alt="하나의 노드를 한명의 HAC 사용자 사용했을때 툴팁">
     <figcaption class="caption">하나의 노드를 한명의 HAC 사용자 사용했을때 툴팁</figcaption>
 </figure>
 </p>
 <p>하나의 노드를 한명의 HAC 사용자 사용했을때 툴팁</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b88589aa-a9c3-4781-8207-37e1870b6897/Untitled.png" alt="하나의 노드를 여러명의 HAC 사용자 사용했을때 툴팁">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/b88589aa-a9c3-4781-8207-37e1870b6897/Untitled.png" alt="하나의 노드를 여러명의 HAC 사용자 사용했을때 툴팁">
     <figcaption class="caption">하나의 노드를 여러명의 HAC 사용자 사용했을때 툴팁</figcaption>
 </figure>
 </p>
@@ -667,7 +661,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p>이런 경우 노드에 마우스 오버 시 나오는 정보 툴팁도 해당 노드를 사용하는 HAC 사용자가 한명일 때와 여러 명일 때가 구분됩니다. 예를 들어 3개의 노드와 4개의 GPU를 사용하는 경우 해당 HAC 사용자가 사용하는 3개의 노드에 마우스 오버하면 한 명의 유저에 대한 툴팁만 나오겠지만, 4번째 노드인 GPU 4개를 사용하는 노드에 마우스를 오버하면 해당 노드를 나누어서 사용하는 모든 엔드 유저에 대한 정보가 툴팁에 제공됩니다. 또한 툴팁에 제공되는 모든 엔드유저가 사용 중인 노드 시각화 또한 하이라이트 됩니다.</p>
 <p>따라서 하나의 노드를 두 명 이상의 HAC 사용자가 사용하는 경우에는 해당 노드에 마우스 오버 시 아래 툴팁 이미지와 같이 사용중인 노드 이름과 현재 상태(Processing/Idle/Shutdown), 사용시간, GPU index 번호, 해당 노드를 나누어서 사용하는 모든 엔드 유저에 대한 정보가 나타납니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f861595-a3cc-4071-a410-79e12748a436/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/6f861595-a3cc-4071-a410-79e12748a436/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -679,7 +673,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </doc-anchor-target>
 <p>개별 클러스터에서 GPU를 사용하여 해당 클러스터에서 진행중인 작업(Job)과 작업 히스토리를 확인하고 GPU 배정이 필요한 작업 간의 우선 순위를 조정하여 먼저 할당 받을 수 있는 페이지입니다. 작업 목록에서 개별 작업 항목을 클릭하면 세부 로그를 확인할 수 있는 페이지로 이동합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8d2b6efc-144f-4d7f-9895-3926bb6c0efd/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/8d2b6efc-144f-4d7f-9895-3926bb6c0efd/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -690,7 +684,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 </li>
 <li><p><strong>Job List (작업목록)</strong></p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa7b41f7-aa23-4dcc-8672-a2f50a28dec9/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/fa7b41f7-aa23-4dcc-8672-a2f50a28dec9/Untitled.png" alt="Untitled" /></p>
 <p>작업 목록에는 다음 정보가 표시됩니다.</p>
 <ul>
 <li><p>Id (아이디)</p>
@@ -732,7 +726,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <li><p>Interaction (상호작용 아이콘 - 우선순위 변경하기, 특정 작업 취소하기)</p>
 </li>
 <li><p>개별 Job 항목을 클릭하면 확인할 수 있는 작업 로그</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/355bd9eb-8965-466b-b31b-4fb93eeffa84/Untitled.png" alt="Untitled" /></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/355bd9eb-8965-466b-b31b-4fb93eeffa84/Untitled.png" alt="Untitled" /></p>
 <ul>
 <li>전체 노드 혹은 노드 별로 확인이 가능합니다.</li>
 </ul>
@@ -742,7 +736,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 <p><strong>사용자 Job 대기열 우선순위 설정하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24e023f1-c3c5-4e1e-a83c-8df60d863cbb/Untitled-8.png" alt="Untitled-8.png">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/24e023f1-c3c5-4e1e-a83c-8df60d863cbb/Untitled-8.png" alt="Untitled-8.png">
     <figcaption class="caption">Untitled-8.png</figcaption>
 </figure>
 </p>
@@ -760,18 +754,18 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </li>
 </ul>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73469fe5-6a72-4ea6-9dca-563001f21e69/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/73469fe5-6a72-4ea6-9dca-563001f21e69/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00f337b3-408f-4356-a426-5ad3ea91dda4/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/00f337b3-408f-4356-a426-5ad3ea91dda4/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p><strong>History List (작업 히스토리)</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/504ba58c-1cdb-4d46-a4d1-aecf67c22968/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/504ba58c-1cdb-4d46-a4d1-aecf67c22968/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -785,7 +779,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </doc-anchor-target>
 <p>User Manage 페이지에서는 사용자 관리 페이지에서는 해당 클러스터에 포함된 모든 HAC 사용자를 관리할 수 있습니다. 상단에 있는 전체 유저 개요 정보와 하단의 User List(사용자 목록)이 제공됩니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eebeffee-7134-4342-9cfe-ef4cd47f4ca1/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/eebeffee-7134-4342-9cfe-ef4cd47f4ca1/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -850,7 +844,7 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 <p><strong>HAC 사용자 추가하기</strong></p>
 <p>User List에 새로운 HAC 사용자를 추가하려면 우측 상단에 **[+ Add User]**버튼을 클릭 후 아래 모달에서 다음 정보를 입력합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bab32d7d-ceb1-4016-872a-601e25ce5f96/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/bab32d7d-ceb1-4016-872a-601e25ce5f96/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -885,20 +879,20 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 <p><strong>HAC 사용자 정보 삭제하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6fc8a830-1893-4bd4-b50c-c6a1c69363f3/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/6fc8a830-1893-4bd4-b50c-c6a1c69363f3/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>좌측 휴지통 모양 아이콘을 클릭해서 사용자 정보를 삭제할 수 있으며 삭제 후에는 기본 정보를 불러올 수 없습니다.</p>
 <p><strong>사용자 계정 정보 변경하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e39d2f3-53c2-4525-a35a-656a1b10e88b/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/0e39d2f3-53c2-4525-a35a-656a1b10e88b/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>User List 에서 특정 HAC 사용자에 해당하는 첫번째 Interaction 아이콘을 클릭하면 사용자 정보를 수정할 수 있습니다. 아래와 같은 ****모달이 뜨면 다음 정보를 입력합니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af374c89-9991-4b6c-8e26-40b781a166a5/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/af374c89-9991-4b6c-8e26-40b781a166a5/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
@@ -925,303 +919,30 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 </ul>
 <p><strong>사용자 환경변수 설정하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dcdfefa-e5a3-461b-beef-bba6ec2cc38f/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/3dcdfefa-e5a3-461b-beef-bba6ec2cc38f/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p>User List 에서 특정 HAC 사용자에 해당하는 첫번째 Interaction 아이콘을 클릭하면 사용자 환경변수를 설정할 수 있습니다. 아래와 같은 ****모달이 뜨면 Key 와 Value 값을 입력합니다.</p>
 <p>여러 Key-Value 쌍을 추가할 수 있으며 한 번 입력한 환경변수를 삭제할 수 있습니다.</p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab1ca279-424a-452f-aae6-043c1b195042/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/ab1ca279-424a-452f-aae6-043c1b195042/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
 <p><strong>사용자 그룹 설정하기</strong></p>
 <p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/800446f3-20da-450b-b6c8-bd4f1429777d/Untitled.png" alt="Untitled">
+    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/225b5024-c3be-431b-9140-5a3566eec327/800446f3-20da-450b-b6c8-bd4f1429777d/Untitled.png" alt="Untitled">
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8fa64ae-ea55-458c-9e3b-23ee42227877/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p>사용자 그룹 목록은 다음과 같은 정보로 구성됩니다.</p>
-<ul>
-<li><strong>User Group List</strong>
-<ul>
-<li>HAC 사용자 그룹 이름</li>
-<li>해당 그룹에 포함된 사용자 수</li>
-<li>설명</li>
-<li>연관된 SDA Model Group
-<ul>
-<li>해당 HAC 사용자 그룹과 매칭된 SDA Model Group</li>
-</ul>
-</li>
-<li>상호작용 아이콘
-<ul>
-<li>그룹 삭제</li>
-<li>그룹 수정</li>
-<li>SDA Model 설정</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<doc-anchor-target id="6-sda-model-관리하기">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#6-sda-model-관리하기">#</doc-anchor-trigger>
-        <span>6. SDA Model 관리하기</span>
-    </h2>
-</doc-anchor-target>
-<p>SDA Model 관리 패널에서는 해당 클러스터에서 사용자에게 제공되는 SDA Model 및 SDA Model 그룹을 추가, 변경, 삭제할 수 있습니다.</p>
-<ul>
-<li>**SDA(**Software-Defined Accelerator) <strong>Model</strong>:  엔드유저가 사용하는 GPU의 단위이며 하나의 사용자 계정에 종속됩니다.</li>
-<li><strong>SDA Model Group</strong>: 그룹 기능은 고객의 토큰에 따라 사용할 수 있는 AI 가속기 디바이스와 그 수를 편리하게 제어하는 기능입니다. 예를 들어, A 고객은 Small과 Medium만 사용하도록 설정된 SDAModelGroupA에 연결됩니다. B 고객은 Medium부터 Large와 xLarge까지 옵션을 선택할 수 있도록 제한을 설정됩니다. 이렇게 그룹 기능을 통해 유연하게 GPU 자원을 조절할 수 있게 됩니다.</li>
-</ul>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1cc95d7-b966-4c43-96bc-95b664b7762e/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ul>
-<li><strong>SDA Model List</strong>
-<ul>
-<li><p>SDA Model 명</p>
-</li>
-<li><p>구성 노드 수 (+gpu수)</p>
-</li>
-<li><p>소속 SDA Model 그룹</p>
-</li>
-<li><p>Interaction 아이콘 (SDA Model 삭제)</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6fc8a830-1893-4bd4-b50c-c6a1c69363f3/Untitled.png" alt="Untitled" /></p>
-<p>삭제할 SDA Model의 좌측 휴지통 모양 아이콘을 클릭해서 해당 SDA Model을 삭제할 수 있습니다. ****삭제 후에는 이전 정보를 검색할 수 없으며 영향을 받는 작업이 있을 수 있습니다.</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>우측 상단에 [+ Add]버튼 클릭 후 아래 모달에서 다음 정보를 입력합니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03f07cce-0cb6-4b9c-93f5-9ec5a817521b/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ul>
-<li><p>SDA Model 명 입력</p>
-</li>
-<li><p>노드 수 선택</p>
-</li>
-<li><p>SDA Model 그룹 선택</p>
-</li>
-<li><p><strong>SDA Model Group</strong></p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d65d701a-8573-4ccc-818d-f1884e036721/Untitled.png" alt="Untitled" /></p>
-<ul>
-<li>포함 모델 수
-<ul>
-<li>마우스 오버시 툴팁으로 포함 모델 리스트를 제공합니다.</li>
-<li>Interaction 버튼 클릭시 다음과 같은 일을 수행할 수 있습니다.
-<ul>
-<li>사용자 그룹 매칭</li>
-<li>노드 그룹 매칭</li>
-<li>특정 SDA 그룹 수정</li>
-<li>특정 SDA 그룹 삭제</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>SDA 모델 그룹 추가하기</strong></p>
-<ol>
-<li><p>SDA Model Group 페이지로 이동합니다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d65d701a-8573-4ccc-818d-f1884e036721/Untitled.png" alt="Untitled" /></p>
-</li>
-<li><p>모델 목록 패널 상단 우측에 있는 [+ Add] 버튼을 클릭하여 아래와 같은 모달에서 해당 정보를 입력합니다.</p>
-</li>
-</ol>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6196125-f364-4b93-956a-b11479a72052/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ol>
-<li>SDA Model 그룹명</li>
-<li>드롭다운에서 SDA Model 선택</li>
-<li>그룹 설명</li>
-<li>SDA Model그룹과 1:1로 매칭되는 디바이스 그룹을 선택합니다.</li>
-</ol>
-<p><strong>SDA Model 그룹 사용자 그룹과 매칭하기</strong></p>
-<p>SDA Model 그룹을 사용자 그룹과 매칭하면 HAC 사용자인 고객의 계정에 따라 사용할 수 있는 AI 가속기 디바이스와 그 수를 제어할 수 있습니다. 예를 들어, A 고객은 Small (노드를 4개 까지만 사용할 수 있는 SDA Model)과 Medium만 사용하도록 설정된 SDA Model 그룹A에 연결됩니다. B 고객은 Medium부터 Large와 xLarge까지 옵션을 선택할 수 있도록 제한을 설정됩니다. 이렇게 그룹 기능을 통해 유연하게 GPU 자원을 조절할 수 있게 됩니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82b0ae72-b384-4e1e-ab36-3a09b93e38d1/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43c24cfc-1256-4f11-9d22-930b1ae88660/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p>SDA Model Group List의 Interacton에 해당하는 첫번째 아이콘을 클릭해서 해당 SDA Model그룹과 1:1로 매칭되는 사용자 그룹을 선택할 수 있습니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59c74e27-219a-4bff-bfec-3b4e563eb940/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><strong>SDA Model 그룹 Node 그룹과 매칭하기</strong></p>
-<p>SDA Model 그룹을 Node 그룹과 매칭하면 사용할 수 있는 GPU 노드 수를 쉽고 유연하게 관리할 수 있습니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82b0ae72-b384-4e1e-ab36-3a09b93e38d1/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2ed281e8-aeb8-4867-8669-b21fa2e4221d/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p>SDA Model Group List의 Interacton에 해당하는 두번째 아이콘을 클릭해서 해당 SDA Model그룹과 1:1로 매칭되는 노드 그룹을 선택할 수 있습니다.</p>
-<p>아래 모달에서 SDA Model그룹과 1:1로 매칭되는 GPU 자원을 배분하는 디바이스 그룹을 선택합니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da1652c1-5bd0-4bcd-88af-0fff69fe4a3b/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a591454c-254f-4bfc-a192-d57a86752d78/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><strong>SDA Model 그룹 변경하기</strong></p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82b0ae72-b384-4e1e-ab36-3a09b93e38d1/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c84e2ceb-2a3a-4f9e-8c7a-dd4b2f63bafc/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p>SDA Model Group List의 Interacton에 해당하는 세번째 아이콘을 클릭해서 SDA Model 정보에 해당하는 Node Group 이름, SDA Model, Group Description 등을 수정할 수 있습니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69274201-1554-4c46-91c2-7f355ac33496/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="7-클러스터-설정하기">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#7-클러스터-설정하기">#</doc-anchor-trigger>
-        <span>7. 클러스터 설정하기</span>
-    </h2>
-</doc-anchor-target>
-<p>Cluster Setting 페이지에서는 현재 클러스터에서 제공되는 모레 솔루션 버전 리스트를 제공하여 모레솔루션 버전을 관리할 수 있습니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5331a0a4-f974-4d7f-b8fc-e186fcb8c065/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ul>
-<li><strong>Overview (Cluster 개요)</strong>
-<ul>
-<li>전체 MAF 버전 개수</li>
-<li>사용 가능한 MAF 버전 개수</li>
-<li>비활성화된 MAF 버전 개수</li>
-</ul>
-</li>
-<li><strong>MAF Ver List</strong>
-<ul>
-<li>MAF Version (최신 버전인 경우 옆에 아이콘이 표기됩니다)</li>
-<li>마프 버전의 현재 상태
-<ul>
-<li>사용중 (green)</li>
-<li>삭제 대기중 (yellow)</li>
-<li>비활성화
-<ul>
-<li>활성화 버튼 클릭시 다시 활성화 가능</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Path</li>
-<li>상호작용 (특정 버전 관리하기)
-<ul>
-<li>수정</li>
-<li>삭제</li>
-<li>활성/비활성화</li>
-<li>최신 버전 설정하기</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>최신 버전 설정하기</strong></p>
-<p>MAF Ver List 에서 두번째 Interaction 아이콘을 클릭하면 HAC 사용자가 사용할 수 있는 최신버전으로 설정할 수 있습니다.</p>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c69cd70c-051d-4a57-bd02-d29353874941/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ul>
-<li>해당버전보다 윗 버전은 자동으로 비활성화됩니다.</li>
-</ul>
-<p><strong>모레 솔루션 버전 정보 수정하기</strong></p>
-<ol>
-<li>Cluster Setting 페이지로 이동합니다.</li>
-<li>모레 솔루션(MAF) 버전을 구성하는 아래 정보를 입력한 후 버전 수정을 클릭합니다.</li>
-</ol>
-<p><figure class="content-center">
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/695fa999-10c5-4f2c-8ebf-1e1e613cb9ab/Untitled.png" alt="모레 솔루션 버전 정보 수정">
-    <figcaption class="caption">모레 솔루션 버전 정보 수정</figcaption>
-</figure>
-</p>
-<p>모레 솔루션 버전 정보 수정</p>
-<doc-anchor-target id="트러블슈팅">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#트러블슈팅">#</doc-anchor-trigger>
-        <span>트러블슈팅</span>
-    </h2>
-</doc-anchor-target>
-<p><strong>Q. 웹콘솔을 어떻게 접속하나요?</strong></p>
-<p>HAC Web Console은 여러 인터넷 브라우저를 지원하지만 크롬(Chrome)에서 가장 적합한 사용자 경험을 제공합니다. <a href="https://mcp.moreh.dev/">https://mcp.moreh.dev/</a> 로 접속하여 제공받은 아이디 패스워드를 입력합니다.</p>
-<ol type="A" start="17">
-<li><p><strong>웹콘솔에서 GPU 부족 or GPU 온도알람이 뜨는데 정확한 원인을 파악하고 해결할 수 있는 방법은 무엇인가요?</strong></p>
-</li>
-<li><p>GPU 부족 문제는 다른 작업이나 사용자가 GPU 자원을 과도하게 사용하고 있어서 여유 자원이 부족하거나 메모리 누수 및 냉각 시스템(환기 부족), GPU 드라이버나 관련 설정 문제등 복합적인 요소가 GPU 부족 및 GPU 온도 알림의 원인일 수 있습니다.</p>
-</li>
-</ol>
-<p>아래 알람 중 GPU 부족 알람이 뜨는 경우 해당 Job과 관련된 에러의 세부 로그를 확인하면 종종 문제의 근본 원인을 찾는 데 도움이 됩니다. <a href="https://www.notion.so/HAC-Moreh-Cloud-Platform-KT-cc7296411cc84b0a93ae215a9c53b8d7?pvs=21">Job &amp; History 페이지</a>에서 개별 작업 항목을 클릭하면 세부 로그 파일을 분석하여 문제 발생 시간, GPU 자원 사용에 관한 작업 및 오류 메시지를 확인할 수 있습니다.</p>
-<ol>
-<li>GPU 에러
-<ul>
-<li>물리 GPU에 에러가 발생한 경우</li>
-</ul>
-</li>
-<li>GPU 부족
-<ul>
-<li>클러스터에 배정된 GPU 자원이 부족하여 대기열 속 다음 작업을 진행하지 못하는 경우</li>
-</ul>
-</li>
-<li>GPU 온도
-<ul>
-<li>GPU 디바이스 온도가 86~93°C인 경우 주의 단계 알림</li>
-<li>GPU 디바이스 온도가 94~97°C인 경우 경고 단계 알림</li>
-<li>GPU 디바이스 온도가 98~°C인 경우 조치 단계 알림</li>
-</ul>
-</li>
-</ol>
-<p>HAC 서버상의 자세한 원인을 해결하고 파악하기 위해서는 고객지원을 요청 주시기 바랍니다.</p>
-<p><strong>Q. 사용자 계정 별로 최대 GPU 자원의 양(SDA 개수)을 제한하려면 어떻게 해야 하나요?</strong></p>
-<p>User Management 페이지에서 Max SDA 수를 제한하고자 하는 해당 Token을 클릭한 후 사용가능한 최대 SDA 개수를 입력합니다.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
-                                        <a href="../../tags/">
+                                        <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                        <span class="mr-2"><a href="../../../tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>guide</span>
                                 </a></span>
                                     </span>
@@ -1234,20 +955,20 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../hac-관리하기/moreh-api-사용하기/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../products/hac-web-console/overview/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Moreh API 사용하기</span>
+                                                <span class="block mt-1">Overview</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../hac-관리하기/smclient-사용하기/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../products/hac(hyperscale-ai-computing)/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">SM​Client 사용하기</span>
+                                                <span class="block mt-1">HAC(Hyperscale AI Computing)</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -1291,6 +1012,6 @@ KTC 관리자가 HAC 클러스터의 자원 사용을 최적화하고 발생 가
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "HAC Web Console 사용 가이드", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Web Console Components", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
