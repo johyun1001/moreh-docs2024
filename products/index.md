@@ -6,6 +6,18 @@ tags: [guide]
 # Products
 
 
+
+=== [!badge Hyper AI Computing Service](hac.md)
+
+===
+
+
+=== [!badge Platform Cloud Service](platformcloudservice.md)
+
+
+===
+
+
 === [!badge AI Model Hub](Aimodelhub.md)
 
 
@@ -13,18 +25,21 @@ tags: [guide]
 
 
 
-=== [!badge Platform Cloud Service](platformcloudservice.md)
+=== [!badge Moreh API](morehapi.md)
 
 
 
 ===
 
 
-=== [!badge Hyper AI Computing Service](hac.md)
+=== [!badge HAC Web Console](webconsole.md)
 
 
 
 ===
+
+
+
 
 ||| Demo
 [!badge Platform Cloud Service](platformcloudservice.md)

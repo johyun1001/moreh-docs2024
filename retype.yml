@@ -10,7 +10,6 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 
-
 steps:
 - uses: actions/checkout@v3
 
@@ -18,6 +17,5 @@ steps:
 
 start:
   pro: true
-
 
 poweredByRetype: false
