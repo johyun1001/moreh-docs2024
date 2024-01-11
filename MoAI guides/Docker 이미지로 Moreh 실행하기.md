@@ -5,19 +5,15 @@ tags: [guide]
 
 # Docker 이미지로 Moreh 실행하기 
 
-`moreh-docker-run`
-
-
 ### MoAI Platform에서 Docker로 Moreh 솔루션을 실행하는 방법
+
+### `moreh-docker-run`
 
 MoAI Platform은 도커 컨테이너 안에서 AI 가속기를 사용하는 PyTorch 프로그램을 실행할 수 있도록 전용 도커 이미지를 제공하고 있습니다. VM에서 다음의 명령어들을 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.
 
-<aside>
-⚠️ `moreh-docker-run`은 도커의 권한이 필요한 실행 스크립트입니다. 따라서 아래와 같은 명령어로 사전에 docker 권한 수정이 필요합니다. `sudo chmod 666 /var/run/docker.sock`
 
-</aside>
-
-### `moreh-docker-run`
+`moreh-docker-run` 은 도커의 권한이 필요한 실행 스크립트입니다. 따라서 아래와 같은 명령어로 사전에 docker 권한 수정이 필요합니다.
+ `sudo chmod 666 /var/run/docker.sock`
 
 ```bash
 $ ubuntu@vm:~$ moreh-docker-run
@@ -92,7 +88,7 @@ Moreh 솔루션 도커 이미지내에 설치된 torch 버전을 명시합니다
 
 ```
 
-- `**--tensorflow {VERSION}**`
+- **`--tensorflow {VERSION}`**
 
 <aside>
 ⚠️ Tensorflow 는 모레 솔루션이 공식 지원을 하지 않는 프레임워크입니다. 따라서, 특정 버전의 이미지가 존재하지 않을 수 있습니다. 필요하신 경우, 문의를 통해서 지원해드리겠습니다.
