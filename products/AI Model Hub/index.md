@@ -1,3 +1,10 @@
+---
+icon: image
+tags: [guide]
+
+---
+
+
 # Moreh AI Model Hub 
 
 
@@ -28,4 +35,6 @@ Moreh AI Model Hub는 텍스트 및 이미지를 생성하고 언어를 번역�
     - Visual Question Answering: 이미지와 관련된 질문에 대답하는 기능을 제공합니다. 사용자가 이미지에 대한 질문을 하면, VQA는 이미지를 분석하고 자연어 처리 기술을 활용하여 해당 질문에 대한 응답을 생성하여 제공합니다.
 4. **Compare Model**
     - Chatbot Comparison: 동일한 모델에 대한 파라미터 별 학습 시간 및 생성된 답변의 질을 비교하여 각 모델의 성능 차이를 비교할 수 있습니다.
+
+
 

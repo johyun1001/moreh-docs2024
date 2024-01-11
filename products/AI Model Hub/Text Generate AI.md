@@ -1,4 +1,11 @@
-### 1. **Text Generate AI**
+---
+order: 90
+icon: quote
+tags: [guide]
+---
+
+
+# **Text Generate AI**
 
 ### Chatbot (Small, Medium, Large)
 

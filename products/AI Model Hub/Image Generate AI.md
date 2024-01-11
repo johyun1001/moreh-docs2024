@@ -1,3 +1,10 @@
+---
+icon: image
+tags: [guide]
+order: 80
+---
+
+
 Image Generation
 
 ### Text to Image
@@ -9,9 +16,7 @@ Image Generation
 - An illustration of a river winding through a meadow
 - A photograph of a person sitting on a bench facing the sunset in the style of Van Gogh
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/59a50975-2c9c-4aae-9f9b-5eafac2881b4/6ad53bf3-e625-43b1-8e1a-4b71625bd083/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/59a50975-2c9c-4aae-9f9b-5eafac2881b4/df078766-a94d-44c5-bf6c-57a6931c5e5a/Untitled.png)
+![Untitled](/img/mhub_t2i.png)
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/59a50975-2c9c-4aae-9f9b-5eafac2881b4/60d7529f-98c0-4bc0-b4f6-a95e6feef9bf/Untitled.png)
 

@@ -7,11 +7,6 @@ tags: [guide]
 
 
 
-=== [!badge Hyper AI Computing Service](hac.md)
-
-===
-
-
 === [!badge Platform Cloud Service](platformcloudservice.md)
 
 
@@ -32,7 +27,7 @@ tags: [guide]
 ===
 
 
-=== [!badge HAC Web Console](webconsole.md)
+=== [!badge Moreh Web Console](webconsole.md)
 
 
 

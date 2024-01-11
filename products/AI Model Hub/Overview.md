@@ -4,6 +4,8 @@ icon: eye
 tags: [guide]
 ---
 
+# Overview
+
 ## Moreh AI Model Hub Overview
 
 **Moreh AI Model Hub(MAMH)는 무엇인가요?**
@@ -15,7 +17,7 @@ Moreh AI Model Hub는 텍스트 및 이미지를 생성하고 언어를 번역�
 1. **모델 검색 및 선택의 용이성**: Model Hub는 하드웨어 자원 및 시간 대비 학습 성능이 좋은 대규모 생성형 AI 모델을 검색하고 선택하는 과정을 단순화합니다. 사용자는 원하는 기능 및 작업에 적합한 모델을 쉽게 찾을 수 있습니다.
 2. **공동 작업 및 공유**: 모델 허브는 사용자 간에 AI 모델을 공동으로 작업하고 공유하는 데 편리한 방법을 제공합니다. 모델을 만들고 수정한 후 다른 사용자와 공유하거나 공동 작업할 수 있습니다. (To Be Determined)
 
-**Moreh AI Model Hub(MAMH) 작동 방식**
+**Moreh AI Model Hub(MAMH) 작동 방식*
 
 **Moreh AI Model Hub**는 대규모 모델을 종합적으로 제공하는 서비스로, 언어뿐만 아니라 이미지 생성 및 모델 비교와 같은 다양한 작업을 수행합니다.
 
