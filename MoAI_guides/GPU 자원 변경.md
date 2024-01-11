@@ -1,6 +1,7 @@
 ---
 icon: cpu
 tags: [guide]
+order: 70
 ---
 # GPU 자원 변경하기
 

@@ -5,7 +5,7 @@ tags: [guide]
 ---
 
 
-# **Text Generate AI**
+# Text Generate AI
 
 ### Chatbot (Small, Medium, Large)
 

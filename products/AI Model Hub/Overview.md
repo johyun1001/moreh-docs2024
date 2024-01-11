@@ -4,8 +4,6 @@ icon: eye
 tags: [guide]
 ---
 
-# Overview
-
 ## Moreh AI Model Hub Overview
 
 **Moreh AI Model Hub(MAMH)는 무엇인가요?**

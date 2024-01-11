@@ -1,5 +1,5 @@
 ---
-order: -100
+order: 80
 icon: terminal
 tags: [guide]
 ---
@@ -8,13 +8,13 @@ tags: [guide]
 **AI 가속기 디바이스, 즉 Software-Defined Accelerator(이하 SDA)는 아래 8가지 명령어로 사용할 수 있습니다.**
 
 1. `moreh-smi -i` - SDA 활용 상태 모니터링하기
-1. `moreh-smi -p` - SDA 상세 하드웨어 상태 모니터링하기
-1. `moreh-smi -t` - SDA 토큰 정보 확인하기
-1. `moreh-switch-model` - SDA 변경하기
-1. `moreh-smi --reset` - SDA 프로세스 종료하기
-1. `moreh-smi device --add` - SDA 생성하기
-1. `moreh-smi device --rm` - SDA 삭제하기
-1. `moreh-smi device --switch` - SDA 디바이스 기본값 변경하기
+2. `moreh-smi -p` - SDA 상세 하드웨어 상태 모니터링하기
+3. `moreh-smi -t` - SDA 토큰 정보 확인하기
+4. `moreh-switch-model` - SDA 변경하기
+5. `moreh-smi --reset` - SDA 프로세스 종료하기
+6. `moreh-smi device --add` - SDA 생성하기
+7. `moreh-smi device --rm` - SDA 삭제하기
+8. `moreh-smi device --switch` - SDA 디바이스 기본값 변경하기
 
 1~5번 명령어를 통해 단일 SDA 디바이스를 설정하고 모니터링 할 수 있으며, 6\~8번 명령어를 통해 다중 SDA 디바이스를 설정할 수 있습니다.
 

@@ -5,8 +5,6 @@ order: 80
 ---
 
 
-Image Generation
-
 ### Text to Image
 
 다음은 Text to Image 에서 시도해 볼 수 있는 프롬프트 예시입니다.

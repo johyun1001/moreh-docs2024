@@ -1,6 +1,7 @@
 ---
 icon: note
 tags: [guide]
+order: 60
 ---
 
 Moreh 솔루션은 주기적으로 업데이트되면서 솔루션의 전반적 성능이 개선되고 있습니다. Moreh 솔루션을 활용하는 방식에 따라 특정 버전의 Moreh 솔루션만을 사용하실 수 있지만, 가급적 최신 Moreh 솔루션을 사용하시는 것을 권장하고 있습니다. Moreh 솔루션을 업데이트하시면 사용하시는 환경의 Deep learning framework(PyTorch, TensorFlow) 및 Moreh driver 등의 필수 패키지들이 업데이트됩니다.

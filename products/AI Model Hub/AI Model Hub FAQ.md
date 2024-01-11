@@ -4,7 +4,7 @@ icon: question
 tags: [guide]
 ---
 
-## 4. FAQ
+## FAQ
 
 **Q. Moreh Hub는 내 개인 데이터를 어떻게 사용하나요?**
 
