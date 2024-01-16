@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Moreh AI Model Hub</title>
-    <meta name="title" content="Moreh AI Model Hub">
-    <meta name="description" content="Moreh AI Model Hub(MAMH)는 무엇인가요?">
+    <title>Docker 이미지로 Moreh 실행하기</title>
+    <meta name="title" content="Docker 이미지로 Moreh 실행하기">
+    <meta name="description" content="MoAI Platform은 도커 컨테이너 안에서 AI 가속기를 사용하는 PyTorch 프로그램을 실행할 수 있도록 전용 도커 이미지를 제공하고 있습니다. VM에서 다음의 명령어들을 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.moreh.io/products/ai-model-hub/">
+    <link rel="canonical" href="https://docs.moreh.io/moai_guides/docker-이미지로-moreh-실행하기/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.moreh.io/products/ai-model-hub/">
-    <meta property="og:title" content="Moreh AI Model Hub">
-    <meta property="og:description" content="Moreh AI Model Hub(MAMH)는 무엇인가요?">
+    <meta property="og:url" content="https://docs.moreh.io/moai_guides/docker-이미지로-moreh-실행하기/">
+    <meta property="og:title" content="Docker 이미지로 Moreh 실행하기">
+    <meta property="og:description" content="MoAI Platform은 도커 컨테이너 안에서 AI 가속기를 사용하는 PyTorch 프로그램을 실행할 수 있도록 전용 도커 이미지를 제공하고 있습니다. VM에서 다음의 명령어들을 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.moreh.io/products/ai-model-hub/">
-    <meta property="twitter:title" content="Moreh AI Model Hub">
-    <meta property="twitter:description" content="Moreh AI Model Hub(MAMH)는 무엇인가요?">
+    <meta property="twitter:url" content="https://docs.moreh.io/moai_guides/docker-이미지로-moreh-실행하기/">
+    <meta property="twitter:title" content="Docker 이미지로 Moreh 실행하기">
+    <meta property="twitter:description" content="MoAI Platform은 도커 컨테이너 안에서 AI 가속기를 사용하는 PyTorch 프로그램을 실행할 수 있도록 전용 도커 이미지를 제공하고 있습니다. VM에서 다음의 명령어들을 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -35,6 +35,7 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.758690261320" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.758690261320" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.758690261320" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -167,52 +168,229 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="moreh-ai-model-hub" class="break-words">
+<doc-anchor-target id="docker-이미지로-moreh-실행하기" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-ai-model-hub">#</doc-anchor-trigger>
-        <span>Moreh AI Model Hub</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#docker-이미지로-moreh-실행하기">#</doc-anchor-trigger>
+        <span>Docker 이미지로 Moreh 실행하기</span>
     </h1>
 </doc-anchor-target>
-<p><strong>Moreh AI Model Hub(MAMH)는 무엇인가요?</strong></p>
-<p>Moreh AI Model Hub는 텍스트 및 이미지를 생성하고 언어를 번역하며 다양한 종류의 창의적인 콘텐츠를 작성하는 등의 작업을 하는 도구입니다.</p>
-<p><strong>MAMH</strong>의 목표는 AMD GPU만으로도 학습이 가능한 AI 모델을 사용하고 공유하는 과정을 단순화하고 개선하는 것입니다. 이 서비스는 다음 목적을 충족하기 위해 탄생하였습니다:</p>
-<ol>
-<li><strong>모델 검색 및 선택의 용이성</strong>: Model Hub는 하드웨어 자원 및 시간 대비 학습 성능이 좋은 대규모 생성형 AI 모델을 검색하고 선택하는 과정을 단순화합니다. 사용자는 원하는 기능 및 작업에 적합한 모델을 쉽게 찾을 수 있습니다.</li>
-<li><strong>공동 작업 및 공유</strong>: 모델 허브는 사용자 간에 AI 모델을 공동으로 작업하고 공유하는 데 편리한 방법을 제공합니다. 모델을 만들고 수정한 후 다른 사용자와 공유하거나 공동 작업할 수 있습니다. (To Be Determined)</li>
-</ol>
-<p><strong>Moreh AI Model Hub(MAMH) 작동 방식</strong></p>
-<p><strong>Moreh AI Model Hub</strong>는 대규모 모델을 종합적으로 제공하는 서비스로, 언어뿐만 아니라 이미지 생성 및 모델 비교와 같은 다양한 작업을 수행합니다.</p>
-<ol>
-<li><strong>Text Generate AI</strong>
+<doc-anchor-target id="moai-platform에서-docker로-moreh-솔루션을-실행하는-방법">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moai-platform에서-docker로-moreh-솔루션을-실행하는-방법">#</doc-anchor-trigger>
+        <span>MoAI Platform에서 Docker로 Moreh 솔루션을 실행하는 방법</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="moreh-docker-run">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moreh-docker-run">#</doc-anchor-trigger>
+        <span><code v-pre>moreh-docker-run</code></span>
+    </h3>
+</doc-anchor-target>
+<p>MoAI Platform은 도커 컨테이너 안에서 AI 가속기를 사용하는 PyTorch 프로그램을 실행할 수 있도록 전용 도커 이미지를 제공하고 있습니다. VM에서 다음의 명령어들을 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.</p>
+<p><code v-pre>moreh-docker-run</code> 은 도커의 권한이 필요한 실행 스크립트입니다. 따라서 아래와 같은 명령어로 사전에 docker 권한 수정이 필요합니다.
+<code v-pre>sudo chmod 666 /var/run/docker.sock</code></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">$ ubuntu@vm:~$ moreh-docker-run
+Checking for nvidia-container-toolkit: install ok installed
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
+Configure a credential helper to remove this warning. See
+&lt;https://docs.docker.com/engine/reference/commandline/login/#credentials-store&gt;
+
+Login Succeeded
+Unable to find image 'sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1' locally
+23.9.0-pytorch1.7.1: Pulling from moreh
+99803d4b97f3: Pull complete
+c38a5999a5b8: Pull complete
+b053b2940d34: Pull complete
+71851d75261e: Pull complete
+850dae3da5a5: Pull complete
+4b44d5d42702: Pull complete
+Digest: sha256:0f5b358a780a656d658b6fc0bdca1064933612d7ec8bbb941833a1ba480bd05d
+Status: Downloaded newer image for sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+</code></pre>
+</doc-codeblock></div>
+<p><code v-pre>moreh-docker-run</code> 명령어를 사용해 Moreh 솔루션이 담긴 도커 이미지를 실행합니다. 추가적으로 다른 옵션값을 안주고 실행했을 경우에는 현재까지 배포된 Moreh 솔루션 이미지 중 가장 최신 버전 도커 이미지를 실행하게 됩니다.</p>
+<p><code v-pre>moreh-docker-run</code> 명령어 뒤에 추가 옵션을 통해 도커 이미지만 다운로드 받기, 버전 확인 등을 실행할 수 있습니다.</p>
+<p><code v-pre>moreh-docker-run</code> 명령어는 <strong>Moreh 솔루션 23.11.0 버전 이후로는 기본적으로 pytorch 1.13.1 버전의 도커 이미지를 제공하고 있습니다. 23.11.0 버전 이전으로는 기본적으로 pytorch 1.7.1 버전의 도커 이미지를 제공하고 있습니다.</strong></p>
+<aside>
+💡 특정 모레 솔루션 버전에서는 일부 대응하는 pytorch 버전 도커 이미지가 존재하지 않을 수 있습니다. 만일 필요하시다면 문의를 통해서 생성 요청 부탁드리겠습니다.
+</aside>
+<doc-anchor-target id="supported-arguments">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-arguments">#</doc-anchor-trigger>
+        <span><strong>Supported Arguments</strong></span>
+    </h3>
+</doc-anchor-target>
 <ul>
-<li>Chatbot_Small, Chatbot_Medium, Chatbot_Large: 챗봇의 명칭은 사용된 언어 모델의 크기에 따라 구분되었습니다. 3개의 챗봇 모두 대형 언어 데이터를 기반으로 문맥을 이해하고 문장을 생성하며 다양한 주제에 대한 정보 제공, 질문 응답, 일상 대화를 통해 사용자와 상호작용합니다.</li>
-<li>Code Generator: 사용자가 지정한 규칙 및 요구 사항에 따라, 프로그래밍 코드를 자동으로 생성하여 제공합니다.
+<li><strong><code v-pre>pullonly (-p)</code></strong></li>
+</ul>
+<p>해당 옵션값을 추가로 줄경우, Moreh 솔루션 이미지를 바로 실행하지 않고 단순히 다운로드하게 됩니다.</p>
+<p>해당 옵션값을 사용할 때는 <code v-pre>--target</code> 옵션값을 추가로 사용할 수 있으며, <code v-pre>--target</code>옵션 값 뒤에는 아래 예시 명령어와 같이 버전을 명시해줘야 합니다. 만일 없을 경우 최신버전 이미지를 가져오게 됩니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --pullonly --target 23.9.0
+</code></pre>
+</doc-codeblock></div>
 <ul>
-<li>Generate code: 사용자가 작성한 주석을 수행하는 코드 작성합니다.</li>
-<li>Explain code: 사용자가 입력한 코드가 어떻게 작동하는지 설명합니다.</li>
-<li>Debugging: 입력한 함수를 디버깅 가능한 test case를 작성합니다.</li>
+<li><strong><code v-pre>version (-v)</code></strong></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><strong>Image Generate AI</strong>
+<p>Moreh 솔루션 도커 이미지 버전명을 보여줍니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">23.9.0
+</code></pre>
+</doc-codeblock></div>
 <ul>
-<li>Text to Image: 텍스트 입력을 기반으로 시각적 콘텐츠를 생성합니다.</li>
-<li>Random Image: 무작위로 선택된 이미지를 제공하는데, 일반적으로 사용자의 요청에 따라 랜덤하게 이미지를 생성합니다.</li>
+<li><strong><code v-pre>—-target {VERSION}</code></strong></li>
 </ul>
-</li>
-<li><strong>Multi Modal AI</strong>
+<p>특정 Moreh 솔루션 버전의 도커 이미지를 실행합니다. 기본값은 최신 모레 솔루션 버전이 들어가게 됩니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --target 23.9.0
+</code></pre>
+</doc-codeblock></div>
 <ul>
-<li>Text to Image Editing: 사용자가 입력한 텍스트 설명에 따라 이미지를 편집합니다.</li>
-<li>Visual Question Answering: 이미지와 관련된 질문에 대답하는 기능을 제공합니다. 사용자가 이미지에 대한 질문을 하면, VQA는 이미지를 분석하고 자연어 처리 기술을 활용하여 해당 질문에 대한 응답을 생성하여 제공합니다.</li>
+<li><strong><code v-pre>--torch {VERSION}</code></strong></li>
 </ul>
-</li>
-<li><strong>Compare Model</strong>
+<p>Moreh 솔루션 도커 이미지내에 설치된 torch 버전을 명시합니다. 기본값은 1.13.1입니다. (<em><strong>Moreh솔루션 23.11.0 이후</strong></em>)</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --torch 1.13.1
+</code></pre>
+</doc-codeblock></div>
 <ul>
-<li>Chatbot Comparison: 동일한 모델에 대한 파라미터 별 학습 시간 및 생성된 답변의 질을 비교하여 각 모델의 성능 차이를 비교할 수 있습니다.</li>
+<li><strong><code v-pre>--tensorflow {VERSION}</code></strong></li>
 </ul>
-</li>
-</ol>
+<aside>
+⚠️ Tensorflow 는 모레 솔루션이 공식 지원을 하지 않는 프레임워크입니다. 따라서, 특정 버전의 이미지가 존재하지 않을 수 있습니다. 필요하신 경우, 문의를 통해서 지원해드리겠습니다.
+</aside>
+<p>Moreh 솔루션 도커 이미지 내에 설치된 Tensorflow 버전을 명시합니다. 기본값은 2.9.0입니다. 현재 Moreh 솔루션에서는 <strong>tensorflow 2.9.0 버전만 제공 중</strong>인 점 참고부탁드립니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --tensorflow 2.9.0</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="moai-platform에서-docker로-moreh-솔루션을-실행하는-시나리오">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moai-platform에서-docker로-moreh-솔루션을-실행하는-시나리오">#</doc-anchor-trigger>
+        <span>MoAI Platform에서 Docker로 Moreh 솔루션을 실행하는 시나리오</span>
+    </h2>
+</doc-anchor-target>
+<p>VM에서 다음과 같이 실행하여 AI 가속기가 활성화된 컨테이너를 실행할 수 있습니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run
+...
+Login Succeeded
+Unable to find image 'sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1' locally
+23.9.0-pytorch1.7.1: Pulling from moreh
+...
+Digest: sha256:b285a30ce74457cc5111b25c7d841f55e9bd090f8ead1a9e79291b7ea03684cc
+Status: Downloaded newer image for sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+(moreh) root@vm:~#</code></pre>
+</doc-codeblock></div>
+<p>만일, 특정 버전의 Moreh 솔루션 이미지를 실행하고 싶다면, 위 명령어 뒤에 <code v-pre>—-target</code>이라는 옵션을 추가하여 원하시는 Moreh 솔루션 버전 도커 이미지를 실행하실 수 있습니다. 만일 해당 옵션 없이 <code v-pre>moreh-docker-run</code>을 실행하면 현재까지 배포된 Moreh 솔루션 중 최신 버전으로 이미지를 실행하게 됩니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --target 23.9.0
+...
+&lt;https://docs.docker.com/engine/reference/commandline/login/#credentials-store&gt;
+Login Succeeded
+Unable to find image 'sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1' locally
+23.9.0-pytorch1.7.1: Pulling from moreh
+...
+Digest: sha256:fce125f57b7e5ede453c0875e93bf7dfa093b77a64418ecfd970ccf69dd94ae4
+Status: Downloaded newer image for sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+(moreh) root@vm:~#</code></pre>
+</doc-codeblock></div>
+<p>컨테이너 안에서 AI 가속기 정보를 조회하고 PyTorch 프로그램을 실행시킬 수 있습니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(moreh) root@vm:~# moreh-smi
+04:23:34 September 13, 2023
++------------------------------------------------------------------------------------------------------+
+|                                                     Current Version: 23.9.0  Latest Version: 23.9.0  |
++------------------------------------------------------------------------------------------------------+
+|  Device  |        Name         |       Model       |  Memory Usage  |  Total Memory  |  Utilization  |
++======================================================================================================+
+|  * 0     |  KT AI Accelerator  |  Small.64GB       |  -             |  -             |  -            |
++------------------------------------------------------------------------------------------------------+
+(moreh) root@vm:~# python pytorch-sample.py
+Downloading &lt;http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz&gt; to data/FashionMNIST/raw/train-images-idx3-ubyte.gz
+26427392it [00:04, 5389702.34it/s]
+Extracting data/FashionMNIST/raw/train-images-idx3-ubyte.gz to data/FashionMNIST/raw
+Downloading &lt;http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz&gt; to data/FashionMNIST/raw/train-labels-idx1-ubyte.gz
+32768it [00:00, 36542.51it/s]
+Extracting data/FashionMNIST/raw/train-labels-idx1-ubyte.gz to data/FashionMNIST/raw
+Downloading &lt;http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz&gt; to data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz
+4423680it [00:08, 505491.87it/s]
+Extracting data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz to data/FashionMNIST/raw
+Downloading &lt;http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz&gt; to data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz
+8192it [00:00, 13945.86it/s]
+Extracting data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz to data/FashionMNIST/raw
+Processing...
+Done!
+[info] Requesting resources for KT AI Accelerator from the server...
+[info] Initializing the worker daemon for KT AI Accelerator...
+[info] [1/1] Connecting to resources on the server (192.168.00.00:00000)...
+[info] Establishing links to the resources...
+[info] KT AI Accelerator is ready to use.
+Epoch 1
+loss: 2.298501  [    0/60000]
+loss: 2.287861  [ 6400/60000]
+loss: 2.270298  [12800/60000]
+</code></pre>
+</doc-codeblock></div>
+<p>컨테이너 안에서 인식되는 AI 가속기는 VM에 할당된 AI 가속기와 동일한 것입니다. VM에서 가속기 모델을 변경하면 컨테이너 안에서도 적용되며 그 반대도 마찬가지입니다. 또한 VM에서 AI 가속기를 사용하는 동안은 컨테이너 안에서는 AI 가속기를 사용할 수 없으며 이것 역시 반대도 마찬가지입니다. 예를 들어 VM에서 AI 가속기를 사용하는 <a href="http://pytorch-sample.py/">pytorch-sample.py</a> 프로그램이 실행 중인 동안 컨테이너에서 AI 가속기를 사용하는 다른 프로그램을 실행할 경우, 아래와 같은 메시지를 출력하고 VM에서 <a href="http://pytorch-sample.py/">pytorch-sample.py</a> 프로그램이 끝날 때까지 대기하게 됩니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(moreh) root@vm:~# python pytorch-sample.py
+...
+[info] Requesting resources for KT AI Accelerator from the server...
+[warning] KT AI Accelerator is already in use by another process:
+[warning]   (pid: 10000) python pytorch-sample.py
+[warning] Two or more processes cannot use KT AI Accelerator at the same time. The program will resume automatically after the process 10000 terminates...
+</code></pre>
+</doc-codeblock></div>
+<p>이 문서의 나머지 부분에서는 MoAI Platform를 위한 Docker 컨테이너를 실행하는 과정을(즉, <code v-pre>moreh-docker-run</code> 명령이 내부적으로 하는 일을) 단계별로 자세히 설명합니다.</p>
+<p><span class="docs-emoji">&#x1F4A1;</span> 도커를 사용하지 않고도 VM 안에서 바로 AI 가속기를 사용해 PyTorch 프로그램 실행이 가능합니다. 이 문서는 특별히 도커 기반으로 실행해야 하는 애플리케이션이 있는 분들을 대상으로 합니다.</p>
+<doc-anchor-target id="도커-이미지-내려받기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#도커-이미지-내려받기">#</doc-anchor-trigger>
+        <span>도커 이미지 내려받기</span>
+    </h3>
+</doc-anchor-target>
+<p>위와 다르게, 단순히 Moreh 솔루션 이미지만 내려받고 싶으시다면 <code v-pre>—-pullonly (-p)</code> 옵션을 활용하여 이미지를 내려받을수 있습니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --pullonly
+...
+&lt;https://docs.docker.com/engine/reference/commandline/login/#credentials-store&gt;
+Login Succeeded
+23.9.0-pytorch1.7.1: Pulling from moreh
+...
+Digest: sha256:b285a30ce74457cc5111b25c7d841f55e9bd090f8ead1a9e79291b7ea03684cc
+Status: Downloaded newer image for sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+</code></pre>
+</doc-codeblock></div>
+<p>해당 명령어도 위와 동일하게 만일 특정 버전의 Moreh 솔루션 이미지를 내려받고싶다면, <code v-pre>—-target</code> 옵션 추가로 이를 수행하실수가 있습니다. 만일 해당 옵션없이 <code v-pre>moreh-docker-run --pullonly</code>을 실행하면 현재까지 배포된 Moreh 솔루션중 최신 버전으로 이미지를 실행하게 됩니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ moreh-docker-run --pullonly --target 23.9.0
+...
+&lt;https://docs.docker.com/engine/reference/commandline/login/#credentials-store&gt;
+Login Succeeded
+23.9.0-pytorch1.7.1: Pulling from moreh
+...
+Digest: sha256:fce125f57b7e5ede453c0875e93bf7dfa093b77a64418ecfd970ccf69dd94ae4
+Status: Downloaded newer image for sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1
+</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="docker-container-runtime으로-컨테이너-시작">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#docker-container-runtime으로-컨테이너-시작">#</doc-anchor-trigger>
+        <span>Docker Container runtime으로 컨테이너 시작</span>
+    </h3>
+</doc-anchor-target>
+<p><code v-pre>moreh-docker-run</code> 외에 다음과 같이 <code v-pre>docker run</code> 명령으로 동일하게 컨테이너를 실행할 수 있습니다. 이 때 다음의 옵션을 포함시켜야 합니다.</p>
+<ul>
+<li><code v-pre>v /etc/moreh:/etc/moreh</code></li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">(pytorch) ubuntu@vm:~$ docker run --rm -it -v /etc/moreh:/etc/moreh sys.deploy.kt-epc.moreh.io:5001/moreh:23.9.0-pytorch1.7.1 /bin/bash
+(moreh) root@vm:~#</code></pre>
+</doc-codeblock></div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -232,20 +410,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../products/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../moai_guides/getting-started/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Products</span>
+                                                <span class="block mt-1">Getting Started</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../products/ai-model-hub/overview/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../moai_guides/gpu-자원-모니터링/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Overview</span>
+                                                <span class="block mt-1">GPU 자원 모니터링 (moreh-​smi)</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -289,6 +467,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Moreh AI Model Hub", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Docker 이미지로 Moreh 실행하기", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
