@@ -1,36 +1,47 @@
 {
   "version": "3.5.0",
-  "created": "2024-01-11T05:35:46Z",
+  "created": "2024-01-16T03:32:21Z",
   "files": [
     {
       "path": ".nojekyll"
     },
     {
-      "path": "1_moai-guides/1_getting-started/index.html"
+      "path": "1_moai-guides/1_getting-started/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/2_docker-이미지로-moreh-실행하기/index.html"
+      "path": "1_moai-guides/2_docker-이미지로-moreh-실행하기/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/gpu-자원-모니터링/index.html"
+      "path": "1_moai-guides/gpu-자원-모니터링/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/gpu-자원-변경/index.html"
+      "path": "1_moai-guides/gpu-자원-변경/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/index.html"
+      "path": "1_moai-guides/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/k8s-cluster에서-moreh-솔루션-사용하기/index.html"
+      "path": "1_moai-guides/k8s-cluster에서-moreh-솔루션-사용하기/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/moreh-솔루션-업데이트-하기/index.html"
+      "path": "1_moai-guides/moreh-솔루션-업데이트-하기/index.html",
+      "old": true
     },
     {
-      "path": "1_moai-guides/reference-model-학습하기/index.html"
+      "path": "1_moai-guides/reference-model-학습하기/index.html",
+      "old": true
     },
     {
       "path": "404.html"
+    },
+    {
+      "path": "about-moai/index.html"
     },
     {
       "path": "CNAME"
@@ -42,10 +53,46 @@
       "path": "img/logo-white.png"
     },
     {
+      "path": "img/mhub_t2i_1.png"
+    },
+    {
+      "path": "img/mhub_t2i.png"
+    },
+    {
+      "path": "img/moai.svg"
+    },
+    {
       "path": "img/modelhub.png"
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "moai_guides/docker-이미지로-moreh-실행하기/index.html"
+    },
+    {
+      "path": "moai_guides/getting-started/index.html"
+    },
+    {
+      "path": "moai_guides/gpu-자원-모니터링/index.html"
+    },
+    {
+      "path": "moai_guides/gpu-자원-변경/index.html"
+    },
+    {
+      "path": "moai_guides/index.html"
+    },
+    {
+      "path": "moai_guides/k8s-cluster에서-moreh-솔루션-사용하기/index.html"
+    },
+    {
+      "path": "moai_guides/moreh-솔루션-업데이트-하기/index.html"
+    },
+    {
+      "path": "moai_guides/reference-model-학습하기/index.html"
+    },
+    {
+      "path": "moai_guides/troubleshooting/index.html"
     },
     {
       "path": "products/ai-model-hub/ai-model-hub-faq/index.html"
@@ -69,10 +116,12 @@
       "path": "products/ai-model-hub/text-generate-ai/index.html"
     },
     {
-      "path": "products/hac(hyperscale-ai-computing)/getting-started/index.html"
+      "path": "products/hac(hyperscale-ai-computing)/getting-started/index.html",
+      "old": true
     },
     {
-      "path": "products/hac(hyperscale-ai-computing)/index.html"
+      "path": "products/hac(hyperscale-ai-computing)/index.html",
+      "old": true
     },
     {
       "path": "products/index.html"
