@@ -27,5 +27,3 @@ jobs:
  with:
   license: ${{ secrets.RETYPE_SECRET }}
 
-
-url: docs.moreh.io
